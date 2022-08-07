@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/gray">
+
+    <ImageView
+        android:id="@+id/mainactivity_logo_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drocsid"
+        android:layout_marginTop="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="130dp"
+        android:layout_marginRight="130dp"/>
+    <TextView
+        android:id="@+id/mainactivity_name_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Drocsid"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-medium"
+        android:style="bold"
+        android:layout_below="@id/mainactivity_logo_image"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"/>
+    <TextView
+        android:id="@+id/mainactivity_slogan_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="We are discord, but better."
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-medium"
+        android:style="bold"
+        android:layout_below="@id/mainactivity_name_text"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/mainactivity_login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_login_curved"
+        android:padding="25dp"
+        android:text="Log in"
+        app:backgroundTint="@null"
+        android:textColor="@color/black"
+        app:cornerRadius="10dp" />
+    <Button
+        android:id="@+id/mainactivity_signup_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainactivity_login_button"
+        android:text="Sign Up"
+        android:background="@drawable/button_signup_curved"
+        app:backgroundTint="@null"
+        android:layout_marginTop="10dp"
+        android:padding="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+</RelativeLayout>
